@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RingMenu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 64px 20px;
+    }
+    .hero {
+      padding: 56px 0;
+    }
+    h1 {
+      font-size: 56px;
+      margin: 0 0 12px;
+      letter-spacing: -0.04em;
+    }
+    h2 {
+      margin-top: 56px;
+      font-size: 28px;
+    }
+    p {
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 1px solid #334155;
+      border-radius: 999px;
+      color: #93c5fd;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 800;
+      background: #3b82f6;
+      color: white;
+    }
+    a.button.secondary {
+      background: #1e293b;
+      color: #e5e7eb;
+      border: 1px solid #334155;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .card {
+      background: #111827;
+      border: 1px solid #263244;
+      border-radius: 18px;
+      padding: 20px;
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+    .notice {
+      background: #1e293b;
+      border: 1px solid #475569;
+      border-radius: 18px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid #263244;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="badge">Free Beta</div>
+      <h1>RingMenu</h1>
+      <p>
+        마우스 가운데 버튼 또는 Ctrl+Alt+Space로 여는
+        Windows용 원형 단축 메뉴입니다.
+      </p>
+
+      <div class="buttons">
+        <a class="button" href="./downloads/RingMenu_Setup_v0.9.25.exe">설치파일 다운로드</a>
+        <a class="button secondary" href="./downloads/RingMenu_Portable_v0.9.25.zip">포터블 ZIP 다운로드</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>주요 기능</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>원형 링 메뉴</h3>
+          <p>마우스 가운데 버튼을 누른 상태에서 방향을 선택하고 놓으면 작업이 실행됩니다.</p>
+        </div>
+        <div class="card">
+          <h3>키보드 링 열기</h3>
+          <p>Ctrl+Alt+Space로도 링 메뉴를 열 수 있습니다.</p>
+        </div>
+        <div class="card">
+          <h3>작업 방식 지원</h3>
+          <p>hotkey, run, url, internal 방식으로 원하는 작업을 등록할 수 있습니다.</p>
+        </div>
+        <div class="card">
+          <h3>트레이 설정</h3>
+          <p>윈도우 오른쪽 아래 시계 옆 ^ 안의 작은 RingMenu 아이콘에서 설정과 종료를 할 수 있습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Windows 경고 안내</h2>
+      <div class="notice">
+        <p>
+          RingMenu는 개인 개발 중인 무료 베타 앱이라 Windows SmartScreen 경고가 표시될 수 있습니다.
+          이는 새로 배포된 실행 파일에서 흔히 발생하는 경고이며, 향후 Microsoft Store 배포도 준비 중입니다.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>업데이트 내역</h2>
+      <div class="notice">
+        <p><strong>v0.9.25</strong> - 미리보기 위치 편집에서 드래그 시 서로 자리 교환 방식 적용</p>
+        <p><strong>v0.9.24</strong> - 사용 설명 팝업 정리</p>
+      </div>
+    </section>
+
+    <footer>
+      RingMenu Free Beta. Windows용 개인 생산성 유틸리티.
+    </footer>
+  </main>
+</body>
+</html>
